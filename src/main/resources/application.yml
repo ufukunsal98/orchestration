@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+zuul:
+  sensitiveHeaders:
+  routes:
+
+    oauth-as:
+      path: /auth/**
+      url: http://localhost:8082
+
+    oauth-rs:
+      path: /rs/**
+      url: http://localhost:8084
+
