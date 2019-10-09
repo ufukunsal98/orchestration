@@ -1,6 +1,6 @@
 server:
   port: 8081
-
+zuul.ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
 zuul:
   sensitiveHeaders:
   routes:
@@ -8,6 +8,7 @@ zuul:
     oauth-as:
       path: /auth/**
       url: http://localhost:8082
+      sensitiveHeaders: Cookie,Set-Cookie
 
     oauth-rs:
       path: /rs/**
