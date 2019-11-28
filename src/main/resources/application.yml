@@ -14,3 +14,11 @@ zuul:
       path: /rs/**
       url: http://localhost:8084
 
+    oauth-scheduling:
+      path: /scheduling/**
+      url: http://localhost:8085
+
+    oauth-setting-management-api:
+      path: /settings/**
+      url: http://localhost:8086
+
