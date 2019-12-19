@@ -1,5 +1,7 @@
 server:
   port: 8081
+#  ssl:
+
 zuul.ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
 zuul:
   sensitiveHeaders:
@@ -21,4 +23,5 @@ zuul:
     oauth-setting-management-api:
       path: /settings/**
       url: http://localhost:8086
+
 
