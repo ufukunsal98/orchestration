@@ -24,4 +24,12 @@ zuul:
       path: /settings/**
       url: http://localhost:8086
 
+    oauth-ktun-pdf-service-api:
+      path: /report-management/**
+      url: http://localhost:8087
+
+      net-core-denemeListService:
+        path: /weatherforecast/**
+        url: https://localhost:44318
+
 
